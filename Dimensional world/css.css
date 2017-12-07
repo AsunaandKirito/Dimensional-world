@@ -1,0 +1,447 @@
+body{
+	width: 980px;
+	margin: 0 auto;
+	padding:0;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	margin:0;
+	padding:0;
+}
+a{
+	color:#333;
+	text-decoration: none;
+}
+p{
+	padding:0;
+	margin-top:11px;
+}
+.page{
+	width: 980px;
+	height: 100%;
+	border: 1px solid; 
+	border-color:rgba(255,38,0,0.1); 
+	background: -webkit-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1));
+}
+.bg-image{
+	position:absolute;
+	width:980px;
+	z-index: -1;
+}
+.bg-image img{
+	width:980px;
+}
+.header-top{
+	height:50px;
+	width: 100%;
+/*	background-color:rgba(176,129,150,0.4);*/
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+    background: linear-gradient(10deg,transparent, rgba(176, 129, 150, 0.6) 100%,rgba(176, 129, 150, 0.3) 65%,rgba(176, 129, 150, 0.2) 35%,rgba(176, 129, 150, 0.1) 20%);
+}
+.header-top .header-top-left{
+	margin-left:70px;
+}
+.header-top .homePageText{
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	color:white;
+	font-size:18px;
+	line-height: 46px;
+	vertical-align:top;
+}
+.header-bottom{
+	height: 182px;
+	position:relative;
+}
+.header-bottom .logoDiv{
+	width: 200px;
+	height: 200px;
+}
+.menu{
+	float:left;
+	margin-top:90px;
+	text-align: center;
+}
+.menu ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+.menu ul li:hover span{
+	color:red;
+}
+.menu ul li:hover img{
+	border: 1px solid red;
+}
+.menu ul li img{
+	border: 1px solid lightblue;
+	background-color:rgba(255,255,255,0.7);
+}
+.menu ul span{
+	display:block;
+}
+.menu ul li a{
+	color:black;
+	font-size:14px;
+	text-align:center;
+}
+.controller{
+	width: 812px ;
+	margin:0 auto;
+}
+
+/*动漫推荐 ------------------------------------------------------------------*/
+.cartoon{
+	margin-top: 20px;
+}
+.cartoon em{
+	font-style: normal;
+}
+.cartoon .cartoon-list-item img,.cartoon .cartoon-list-item{
+	height: 120px;
+	width: 170px;
+}
+.cartoon .cartoon-list-item{
+	display: inline-block;
+	position:relative;
+	overflow: hidden;
+	box-shadow: 2px 1px 5px #000;
+	margin:13px;
+}
+.cartoon .cartoon-list-item:hover{
+	box-shadow: 2px 1px 27px #9e5454;
+}
+.cartoon .cartoon-list-item:hover .title{
+	padding-top: 330px;
+	transition: padding-top .3s;
+	-moz-transition: padding-top .3s; /* Firefox 4 */
+	-webkit-transition: padding-top .3s; /* Safari 和 Chrome */
+	-o-transition: padding-top .3s; /* Opera */
+}
+.cartoon .cartoon-list-item .title,.cartoon .cartoon-list-item .episode{
+	display: block;
+	position:absolute;
+	color: white;
+	font-size: 12px;
+}
+.cartoon .cartoon-list-item .episode{
+	padding: 3px;
+	top: 5px;
+	right: 9px;
+	background-color: rgba(0,0,0,0.3);
+}
+.cartoon .cartoon-list-item .title{
+	text-align:center;
+	padding-top: 7px;
+	padding-bottom:4px;  
+	width:100%;
+	bottom:0px;
+	left: 0px;
+	background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9));
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(35%, rgba(0, 0, 0, 0.2)), color-stop(65%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9));
+}
+.cartoon .cartoon-list-item,.cartoon .cartoon-list-item img,.cartoon .cartoon-list-item .title{
+	border-radius: 1%;
+}
+
+
+/*动漫图片------------------------------------------------------------*/
+.images{
+	margin-top:30px;
+	padding-bottom: 40px;
+	font-size: 0;
+	-ms-user-select:none;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.imagesdiv img{
+	border:1px solid;
+	border-color: rgba(0,0,0,0.3);
+	display: inline-block;
+}
+.imagesdiv img:hover{
+	box-shadow:1px 1px 10px black;
+	cursor:crosshair;
+}
+.imagesdiv .centerDiv{
+	width:268px;
+	height:134px;
+	display: inline-block;
+	background: -webkit-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(140deg,rgba(0,0,0,0.01),rgba(40,214,250,0.1));
+}
+.showRecommend{
+	display: none;
+}
+.previewImg{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	background-image: linear-gradient(0deg, transparent 24%, rgba(32, 255, 77, 0.15) 25%, rgba(32, 255, 77, 0.15) 26%, transparent 27%, transparent 74%, rgba(32, 255, 77, 0.15) 75%, rgba(32, 255, 77, 0.15) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(32, 255, 77, 0.15) 25%, rgba(32, 255, 77, 0.15) 26%, transparent 27%, transparent 74%, rgba(32, 255, 77, 0.15) 75%, rgba(32, 255, 77, 0.15) 76%, transparent 77%, transparent);
+	background-size: 7rem 7rem;
+  	background-position: -5.2rem -5.2rem;
+}
+.previewImgCss{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	cursor:crosshair;
+}
+/*动漫盒子----------------------------------------*/
+.cubeBox{
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-bottom:30px;
+	cursor: pointer;
+  	-ms-user-select:none;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.cubeBoxImg{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-right:68px;
+	background: #ccc;
+	position: relative;
+	transform-style:preserve-3d;
+
+}
+.cubeBoxImg div{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-size:cover; 
+	-webkit-box-shadow:0 0 10px #020101;/*#5fbcff*/
+	-moz-box-shadow:0 0 10px #020101;
+	-o-box-shadow:0 0 10px #020101;
+	box-shadow: 0 0 10px #020101;
+	/*opacity: .8;*/
+	}
+	.front{
+		transform:translateZ(100px);
+	}
+	.back{
+		transform:translateZ(-100px) rotateY(180deg);
+	}
+	.left{
+		transform:translateX(-100px) rotateY(270deg);
+	}
+	.right{
+		transform:translateX(100px) rotateY(90deg);
+	}
+	.top{
+		transform:translateY(-100px) rotateX(90deg);
+	}
+	.bottom{
+		transform:translateY(100px) rotateX(270deg);
+	}
+
+
+
+/*动漫小说-----------------------------------------------------------*/
+.story{
+	height: 442px;
+	margin-top:25px;
+	margin-bottom: 222px;
+}
+.story-left{
+	float:left;
+}
+.xiao_shuo_left{
+	width: 553px;
+	background-color: rgba(0,0,0,0.12);
+	line-height:18px;
+}
+.xiao_shuo_left p{
+	font-size: 16px;
+	font-weight:400;
+}
+.xiao_shuo_left_1,.xiao_shuo_left_2{
+	 overflow: hidden;
+}
+.xiao_shuo_left_1 .img_div,.xiao_shuo_left_2 .img_div{
+	float: left;
+	padding-right:10px;  
+	padding-bottom:3px;
+}
+.xiao_shuo_left_1 .img_div img,.xiao_shuo_left_2 .img_div img{
+	box-shadow:1px 1px 5px black;
+}
+.xiao_shuo_left_1 .img_div img:hover,.xiao_shuo_left_2 .img_div img:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+.xiao_shuo_left_1 span,.xiao_shuo_left_2 span{
+	color:#6d0250;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top:11px;
+	display: inline-block;
+}
+.xiao_shuo_left_1 span:hover,.xiao_shuo_left_2 span:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+.xiao_shuo_left_1 p,.xiao_shuo_left_2 p{
+	text-indent:2em;
+}
+.xiao_shuo_left_up_down_1,.xiao_shuo_left_up_down_2{
+	background-color: rgba(0,0,0,0.12);
+	height:20px;
+	font-size:12px;
+	padding-top:3px;
+}
+.xiao_shuo_left_up_down_left_1,.xiao_shuo_left_up_down_left_2{
+	float: left;
+	padding-left:7px;
+}
+.xiao_shuo_left_up_down_right_1,.xiao_shuo_left_up_down_right_2{
+    float: right;
+    padding-right:7px;
+}
+
+.two{
+	margin-top: 13px;
+}
+
+/*动漫小说---推荐---------------------------------------------------------------------------*/
+.roasting ul{
+	transform: translate(36%,50%);
+}
+.roasting ul li{
+	color:white;
+	font-size:11px;
+	float: left;
+	height: 14px;
+	width: 14px;
+	margin:0px 5px;
+	background-color:#6d0250;
+	text-align:center;
+}
+.roasting ul li:hover{
+	cursor: pointer;
+}
+.roasting ul .the_style{
+	color:#6d0250;
+	background-color:#ffffff;
+	border:1px solid #6d0250;
+}
+.story-right{
+	width: 253px;
+	float: right;
+}
+.story-right span{
+	color:#000;
+	font-size:14px;	
+	display: block;
+	margin-left:8px;
+	padding:12px 6px 0px 0px;
+}
+.story-right .ctrlRecommend{
+	overflow:hidden;
+}
+.story-right .ctrlRecommend .ul1 li:nth-child(2),.story-right .ctrlRecommend .ul1 li:nth-child(4){
+	background-color:rgba(226,200,13,0.1);
+}
+.story-right .ctrlRecommend .ul1 li:hover{
+	background:rgba(255,38,0,0.1);
+}
+.recommend-Story{
+	background:rgba(0,0,0,0.04);
+	overflow: auto;
+	margin-left: 6px;
+	padding: 5px;
+}
+.recommend-Story .div1{
+	float: left;
+	padding:5px 12px 5px 10px;
+}
+.recommend-Story .div1 img{
+	box-shadow:1px 1px 5px black;
+}
+.recommend-Story .div2{
+	padding-left: 10px;
+	font-size:14px;
+	font-weight: 600;
+}
+.recommend-Story .div2 a{
+	color:#6d0250;
+}
+@media screen and (max-width:480px){
+	body{
+		width: 300px;
+	}
+	.page{
+		width: 300px;
+	}
+	.bg-image{
+	/*width:300px;*/
+	}
+	.bg-image img{
+		/*width:300px;*/
+	}
+	.menu {
+	    margin-top: 0;
+	    padding:10px;
+	}
+	.menu ul li a {
+    	margin-right: 13px;
+	}
+	.controller {
+	    width: 300px;
+	}
+	.cartoon .cartoon-list-item {
+    	display: block;
+    	margin: 14px auto;
+	}
+	.imagesdiv{
+		text-align: center;
+	}
+	.imagesdiv .centerDiv {
+		height:0;
+	}
+	.cubeBox{
+		text-align: center;
+	}
+	.cubeBoxImg {
+		margin: 36px 0px 74px 55px;
+	}
+	.story{
+		margin-bottom: 1086px;
+	}
+	.xiao_shuo_left {
+		width:100%;
+	}
+	.xiao_shuo_left_1, .xiao_shuo_left_2 {
+    	padding:0 25px;
+	}
+	.xiao_shuo_left_1 .img_div, .xiao_shuo_left_2 .img_div {
+    	margin-left: 20%;
+	}
+	.story-right {
+	    width: 100%;
+	}
+}
